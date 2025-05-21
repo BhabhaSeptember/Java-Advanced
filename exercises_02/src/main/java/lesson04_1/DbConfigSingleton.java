@@ -1,4 +1,9 @@
-package com.example;
+package lesson04_1;
+
+//SINGLETON: EXAMPLE
+
+//Singletons are good for storing data that is shared by an entire application
+//e.g. database configuration data
 
 public final class DbConfigSingleton {
   private final String hostName;
