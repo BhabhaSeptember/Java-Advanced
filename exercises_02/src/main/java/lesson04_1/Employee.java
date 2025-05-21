@@ -17,7 +17,7 @@ public class Employee {
 //Instead of only using getter methods, we can have a utility method to get specific details about the Employee object
 //This can then be specialized for use by subclasses    
     public String getDetails() {
-      return "\nID - " + empId + "\nName - " + name;
+      return "\nID - " + empId + "\nName - " + name + "\nSalary - R" + salary;
     }
 
     public String getAllDetails() {

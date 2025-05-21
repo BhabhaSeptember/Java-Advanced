@@ -12,13 +12,16 @@ public class BadBonusTest {
     BadBonus bonus = new BadBonus();
     
     System.out.println(e.getDetails());
-    System.out.println("Bonus: " + bonus.calcBonus(e));
+    System.out.println("Bonus: R" + bonus.calcBonus(e));
+    
     System.out.println(eng.getDetails());
-    System.out.println("Bonus: " + bonus.calcBonus(eng));
+    System.out.println("Bonus: R" + bonus.calcBonus(eng));
+    
     System.out.println(m.getDetails());
-    System.out.println("Bonus: " + bonus.calcBonus(m));
+    System.out.println("Bonus: R" + bonus.calcBonus(m));
+    
     System.out.println(d.getDetails());
-    System.out.println("Bonus: " + bonus.calcBonus(d));
+    System.out.println("Bonus: R" + bonus.calcBonus(d));
 
   }
 }

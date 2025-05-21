@@ -1,6 +1,9 @@
 package lesson04_1;
 
 //APPLYING POLYMORPHISM
+//Each method performs calculation based on the type of employee passed in and returns the bonus amount
+//If we add more employee types, we would have to add more methods which could just be repetitive code
+//It's better to have methods that use the most generic form of our object
 public class BadBonus {
     
   public double calcBonus(Employee e){
