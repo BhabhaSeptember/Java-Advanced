@@ -38,8 +38,12 @@ System.out.println("\n===== Sales Report =====");
 //EXAMPLE2:        
         System.out.println("\n===== Sales Report 2 =====");
         for (SalesCalcs item : itemList) {
-            item.printItemData2(item);
+            item.printItemData2();
         }
+        
+        
+ //Implementing A static method from interface    
+    SalesCalcs.printItemArray(itemList);
 
     }
 }
