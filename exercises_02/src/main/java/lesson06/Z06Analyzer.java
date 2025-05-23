@@ -2,6 +2,7 @@ package lesson06;
 
 //LAMBDA EXPRESSION SHORTHAND
 
+
 public class Z06Analyzer {
   
   public static void searchArr(String[] strList, String searchStr, StringAnalyzer analyzer){
@@ -19,7 +20,8 @@ public class Z06Analyzer {
     String searchStr = "to";
     System.out.println("Searching for: " + searchStr);
 
-    // Use short form Lambda
+//Using the short hand form Lambda
+//the type of the argument used in the lambda expression is inferred based on the context the expression is being used
     System.out.println("==Contains==");
     Z06Analyzer.searchArr(strList01, searchStr, 
       (t, s) -> t.contains(s));

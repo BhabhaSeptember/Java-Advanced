@@ -12,7 +12,7 @@ public class Z01Analyzer {
 //Create/instantiate a regular class object called analyzeTool
         AnalyzerTool analyzeTool = new AnalyzerTool();
 
-//Call the arrContains method on the object
+//Call the objects class arrContains method on it
         System.out.println("===Contains===");
         for (String currentStr : strList) 
             if (analyzeTool.arrContains(currentStr, searchStr)) {

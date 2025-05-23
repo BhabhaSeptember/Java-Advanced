@@ -1,6 +1,5 @@
 package lesson06;
 
-//ANONYMOUS INNER CLASSES
 //Below is a single method interface aka Functional Interface
 public interface StringAnalyzer {
 

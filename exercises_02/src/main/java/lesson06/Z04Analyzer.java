@@ -1,6 +1,6 @@
 package lesson06;
 
-//ANONYMOUS INNER CLASS: EXAMPLE
+//STRING ANALYSIS ANONYMOUS INNER CLASS EXAMPLE
 
 public class Z04Analyzer {
   
@@ -26,6 +26,8 @@ public class Z04Analyzer {
 //SUMMARY: The class analyzes an array of strings given a search string
 //The prints the strings that contain the search string
 
+//Created an anon inner class for third argument
+//Code is stored in the calling class
 System.out.println("===Contains===");
     Z04Analyzer.searchArr(strList01, searchStr, 
       new StringAnalyzer(){

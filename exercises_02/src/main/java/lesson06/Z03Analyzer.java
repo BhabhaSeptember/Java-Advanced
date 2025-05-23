@@ -28,6 +28,7 @@ public class Z03Analyzer {
     ContainsAnalyzer contains = new ContainsAnalyzer();
         
     System.out.println("===Contains===");
+//With the searchArr helper method, the main method is shorter and more readable
     Z03Analyzer.searchArr(strList01, searchStr, contains);
   }  
 }
