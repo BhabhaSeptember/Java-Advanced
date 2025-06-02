@@ -1,4 +1,4 @@
-package com.example.lambda;
+package lesson08;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,6 +6,11 @@ import java.util.List;
 /**
  * @author MikeW
  */
+
+//Class is created using Builder pattern to create new objects
+//Generates a collection persons 
+//Class creates master list of persons we want to contact
+
 public class Person {
   private String givenName;
   private String surName;
@@ -18,8 +23,13 @@ public class Person {
   private String state;
   private String code;
   
-  public static class Builder{
-    
+
+//BUILDER PATTERN
+//Allows object creating by using method chaining
+//Easier to read code, More flexible object creation
+//Object returns itself  
+  public static class Builder { 
+      
     private String givenName="";
     private String surName="";
     private int age = 0;
@@ -84,8 +94,9 @@ public class Person {
     public Person build(){
       return new Person(this);
     }
-  }
-    
+  }//end of Builder class
+   
+//Constructors  
   private Person(){
     super();
   }
@@ -161,12 +172,16 @@ public class Person {
 
   @Override
   public String toString(){
-    return "Name: " + givenName + " " + surName + "\n" + "Age: " + age + "  Gender: " + gender + "\n" + "eMail: " + eMail + "\n";
+    return "Name: " + givenName + " " + surName + "\n" + "Age: " + age + "\nGender: " + gender + "\n" + "eMail: " + eMail + "\n";
   } 
 
+//METHODS  
   public static List<Person> createShortList(){
+//Creating an ArrayList of Person objects      
     List<Person> people = new ArrayList<>();
     
+//Builder pattern being used in all collection objects
+//Pattern uses method chaining to provide easy way ro create objects
     people.add(
       new Person.Builder()
             .givenName("Bob")
@@ -274,6 +289,6 @@ public class Person {
     
     
     return people;
-  }
+  }//end of creatShortList() method
   
-}
+}//end of Person class
