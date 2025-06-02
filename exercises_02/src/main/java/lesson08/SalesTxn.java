@@ -21,7 +21,7 @@ public class SalesTxn {
     private State state;
     private String code;
     
-    public static class Builder{
+    public static class Builder {
     
         private long txnId = 0;
         private String salesPerson = "";
@@ -30,11 +30,13 @@ public class SalesTxn {
         private String paymentType = "";
         private double unitPrice = 0;
         private double unitCount = 0;
+        //Static factory method used to create date: 1 Jan 0001(first year of ISO calender)        
         private LocalDate txnDate = LocalDate.of(1, 1, 1);
         private String city = "";
         private State state;
         private String code = "";
        
+        
         public SalesTxn.Builder txnId(long val){
             this.txnId = val;
             return this;
@@ -95,7 +97,7 @@ public class SalesTxn {
         public SalesTxn build(){
           return new SalesTxn(this);
         }
-  }
+  }//end of Builder class
     
     private SalesTxn(){
         super();
@@ -207,7 +209,7 @@ public class SalesTxn {
         "Buyer: " + this.getBuyerName() + " - " +
         "Product: " + product + " - " + 
         "ST: " + state + " - " + 
-        "Amt: " + this.getTransactionTotal() + " - " +
+        "Amt: $" + this.getTransactionTotal() + " - " +
         "Date: " + txnDate);      
     }
 

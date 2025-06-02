@@ -1,4 +1,4 @@
-package com.example.lambda;
+package lesson08;
 
 import java.util.List;
 

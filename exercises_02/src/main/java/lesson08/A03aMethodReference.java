@@ -1,4 +1,4 @@
-package com.example.lambda;
+package lesson08;
 
 import java.util.List;
 
@@ -17,8 +17,11 @@ public class A03aMethodReference {
             .filter(t -> t.getState().equals(State.CA))
             .forEach(t -> t.printSummary()); 
         
+        System.out.println("\n===== Example 2 =====");
+//:: is method reference operator,
+//a shorthand notation to call method/constructor by reference instead of full lambda expression
         tList.stream()
             .filter(t -> t.getState().equals(State.CA))
-            .forEach(SalesTxn::printSummary);    
+            .forEach(SalesTxn::printSummary); //class name then call method (same as line 18 above)
     }   
 }

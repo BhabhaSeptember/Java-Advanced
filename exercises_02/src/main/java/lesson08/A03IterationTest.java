@@ -1,4 +1,4 @@
-package com.example.lambda;
+package lesson08;
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ public class A03IterationTest {
                       
         System.out.println("\n== CA Transations Lambda ==");
         tList.stream()
-            .filter(t -> t.getState().equals("CA"))
+            .filter(t -> t.getState().equals(State.CA))
             .forEach(SalesTxn::printSummary);    
     }   
 }

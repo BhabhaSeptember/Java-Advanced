@@ -24,7 +24,7 @@ public class A05OldStyleSumLoop {
           }
         }
         
-        System.out.println("Total Sales: " + sum);               
+        System.out.println("Total Sales: $" + sum);               
     }
     
 }
