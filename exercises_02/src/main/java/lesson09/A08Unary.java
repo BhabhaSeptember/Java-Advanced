@@ -33,6 +33,6 @@ public class A08Unary {
 //Prints the uppercase version of the buyer's name    
       System.out.println("== Upper Buyer");
       System.out.println(
-          unaryStr.apply(first.getBuyerName()));
+          unaryStr.apply("Buyers Name: " + first.getBuyerName()));
   }
 }
